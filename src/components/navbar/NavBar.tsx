@@ -3,7 +3,7 @@ import { Raleway } from "next/font/google";
 import BurgerMenuIcon from "./burgerMenu/BurgerMenuIcon";
 
 const ralewayThin = Raleway({
-  weight: "100",
+  weight: "variable",
   subsets: ["latin"],
 });
 
@@ -19,7 +19,9 @@ const NavBar = () => {
     border-slate-200
     w-full"
     >
-      <h2 className={`${ralewayThin.className} w-full text-4xl text-slate-800`}>
+      <h2
+        className={`${ralewayThin.className} font-thin w-full text-4xl text-slate-800`}
+      >
         Zoe Liao
       </h2>
       <BurgerMenuIcon />
