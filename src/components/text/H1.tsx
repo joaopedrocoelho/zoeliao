@@ -1,10 +1,15 @@
 import React from "react";
 import { raleway } from "../RalewayFont";
 
-const H1 = ({ children }: { children: React.ReactNode }) => {
+interface props extends React.HTMLAttributes<HTMLHeadingElement> {
+  children: React.ReactNode;
+}
+
+const H1 = ({ children, ...attributes }: props) => {
   return (
     <h1
       className={`${raleway.className} font-normal text-5xl w-full  sm:text-6xl`}
+      {...attributes}
     >
       {children}
     </h1>

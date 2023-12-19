@@ -7,7 +7,7 @@ import P from "./text/P";
 const About = () => {
   return (
     <SectionWrapper>
-      <H1>About</H1>
+      <H1 id="about">About</H1>
       <div
         className="w-full flex flex-col 
         lg:grid 

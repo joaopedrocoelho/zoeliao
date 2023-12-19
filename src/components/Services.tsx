@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <SectionWrapper>
-      <H1>Services</H1>
+      <H1 id="services">Services</H1>
       <div
         className="flex flex-col
        w-full items-center

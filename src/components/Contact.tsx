@@ -7,7 +7,7 @@ export const Contact = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col px-4 py-12 w-full">
-        <H1>Contact晶熙黑體</H1>
+        <H1 id="Contact">Contact</H1>
         <div className="pt-12">
           <P>
             Congratulations! You are taking your first steps towards your dream

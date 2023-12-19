@@ -1,5 +1,6 @@
 import React from "react";
 import { raleway } from "../RalewayFont";
+import Link from "next/link";
 
 const NavLinks = () => {
   return (
@@ -25,10 +26,18 @@ const NavLinks = () => {
     lg:font-light
     `}
     >
-      <li>Services</li>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <li>
+        <Link href="#services">Services</Link>
+      </li>
+      <li>
+        <Link href="#about">About</Link>
+      </li>
+      <li>
+        <Link href="#projects">Projects</Link>
+      </li>
+      <li>
+        <Link href="#contact">Contact</Link>
+      </li>
     </ul>
   );
 };

@@ -6,7 +6,7 @@ import MansoryGrid from "./projects/MansoryGrid";
 const Projects = () => {
   return (
     <SectionWrapper>
-      <H1>Projects</H1>
+      <H1 id="projects">Projects</H1>
       <div className="pt-12">
         <MansoryGrid />
       </div>
