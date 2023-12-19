@@ -10,16 +10,16 @@ const ralewayThin = Raleway({
 });
 
 const NavBar = () => {
-  const mediaMatch = window.matchMedia("(min-width: 1024px)");
+  // const mediaMatch = window.matchMedia("(min-width: 1024px)");
   const [isOpen, setIsOpen] = useState(false);
 
-  const [matches, setMatches] = useState(mediaMatch.matches);
+  // const [matches, setMatches] = useState(mediaMatch.matches);
 
-  useEffect(() => {
-    const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
-    mediaMatch.addListener(handler);
-    return () => mediaMatch.removeListener(handler);
-  });
+  // useEffect(() => {
+  //   const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
+  //   mediaMatch.addListener(handler);
+  //   return () => mediaMatch.removeListener(handler);
+  // });
 
   return (
     <header
@@ -51,11 +51,14 @@ const NavBar = () => {
           <BurgerMenuIcon />
         </button>
       </div>
+
       <div
-        className="flex overflow-hidden flex-col w-full"
+        className={`nav flex overflow-hidden flex-col w-full
+          lg:max-h-screen
+        `}
         style={{
           transition: "max-height 0.5s ease-in-out",
-          maxHeight: isOpen ? "300px" : matches ? "100vh" : "0",
+          maxHeight: isOpen ? "100vh" : "0px",
         }}
       >
         <NavLinks />
