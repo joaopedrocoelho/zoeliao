@@ -15,7 +15,15 @@ const NavLinks = () => {
     w-full 
     h-full
     items-center 
-    py-8 gap-y-4`}
+    py-8 gap-y-4
+    lg:flex-row
+    lg:gap-x-6
+    lg:py-0
+    lg:justify-end
+    lg:pr-4
+    lg:text-xl
+    lg:font-light
+    `}
     >
       <li>Services</li>
       <li>About</li>
