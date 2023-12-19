@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { PiCaretDownThin } from "react-icons/pi";
+import { raleway } from "./RalewayFont";
 
 interface AccordionProps {
   details: string;
@@ -17,6 +18,7 @@ const Accordion = ({ details, summary, open, onClick }: AccordionProps) => {
         e.preventDefault();
         onClick();
       }}
+      className={`lg:max-w-[500px] ${raleway.className}`}
     >
       <summary
         className="flex 
@@ -24,7 +26,13 @@ const Accordion = ({ details, summary, open, onClick }: AccordionProps) => {
       items-center
       capitalize cursor-pointer 
       px-6 py-6 border-b-[1px] 
-      border-b-slate-200"
+      border-b-slate-200
+      lg:border-0
+      lg:justify-start
+      lg:gap-x-4
+      lg:text-xl
+      lg:font-medium
+ "
       >
         {summary}
         <PiCaretDownThin
@@ -44,7 +52,7 @@ const Accordion = ({ details, summary, open, onClick }: AccordionProps) => {
         }}
       >
         <p
-          className="px-6 py-8"
+          className="px-6 py-8 font-light text-lg leading-8"
           style={{
             transition: "opacity 0.6s ease-in-out",
             transitionDelay: "0.5s",

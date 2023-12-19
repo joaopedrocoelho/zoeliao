@@ -9,9 +9,28 @@ const Services = () => {
 
   return (
     <SectionWrapper>
-      <div className="flex flex-col w-full">
-        <H1>Services</H1>
-        <ul className="pt-12">
+      <H1>Services</H1>
+      <div
+        className="flex flex-col
+       w-full items-center
+       lg:grid 
+      lg:grid-cols-[1.3fr,1fr]
+      lg:h-[80vh]"
+      >
+        <span
+          className="text-[200px]
+            m-auto
+        lg:flex 
+        lg:items-center 
+        lg:justify-center 
+        lg:bg-green-100 
+        lg:w-full 
+        lg:h-full"
+        >
+          🐙
+        </span>
+
+        <ul className="pt-12 lg:order-first lg:mx-auto">
           <li>
             <Accordion
               summary="
