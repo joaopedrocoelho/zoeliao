@@ -8,9 +8,28 @@ import ButtonLink from "./buttons/ButtonLink";
 const HeroBanner = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-col items-center">
-        <span className="text-[200px]">🧝‍♀️</span>
-        <div className="text-center w-full">
+      <div
+        className="flex flex-col items-center 
+      lg:grid 
+      lg:grid-cols-[1.3fr,1fr]
+      w-full 
+      lg:h-[80vh]"
+      >
+        <span
+          className="text-[200px] 
+        lg:flex 
+        lg:items-center 
+        lg:justify-center 
+        lg:bg-green-100 
+        lg:w-full 
+        lg:h-full"
+        >
+          🧝‍♀️
+        </span>
+        <div
+          className="text-center w-full
+        "
+        >
           <H1>Data to enrich your online business</H1>
           <p
             className={`${raleway.className} font-normal mt-6 text-lg leading-8 text-gray-600`}
