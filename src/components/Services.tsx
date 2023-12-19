@@ -15,7 +15,7 @@ const Services = () => {
        w-full items-center
        lg:grid 
       lg:grid-cols-[1.3fr,1fr]
-      lg:h-[80vh]"
+     "
       >
         <span
           className="text-[200px]
