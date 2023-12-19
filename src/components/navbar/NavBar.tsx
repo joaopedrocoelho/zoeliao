@@ -22,19 +22,23 @@ const NavBar = () => {
   });
 
   return (
-    <header className="flex flex-col h-full lg:flex-row lg:w-full border-b-[1px]">
+    <header
+      className="flex flex-col h-full lg:flex-row lg:w-full
+     border-b-[1px] 
+     border-beige-darkest
+    bg-beige-darker
+    lg:bg-transparent
+    lg:border-none"
+    >
       <div
         className="flex 
     justify-between 
-    bg-slate-50 
     py-6 items-center 
     px-4
-    border-slate-200
+  
     w-full"
       >
-        <h2
-          className={`${ralewayThin.className} font-thin w-full text-4xl text-slate-800`}
-        >
+        <h2 className={`${ralewayThin.className} font-thin w-full text-4xl `}>
           Zoe Liao
         </h2>
         <button

@@ -4,7 +4,7 @@ import { raleway } from "../RalewayFont";
 const H1 = ({ children }: { children: React.ReactNode }) => {
   return (
     <h1
-      className={`${raleway.className} font-light text-5xl w-full text-gray-900 sm:text-6xl`}
+      className={`${raleway.className} font-normal text-5xl w-full  sm:text-6xl`}
     >
       {children}
     </h1>

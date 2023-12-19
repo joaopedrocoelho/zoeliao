@@ -12,11 +12,11 @@ const ButtonLink = ({ children, ...attributes }: ButtonProps) => {
       className={`
       ${raleway.className}
       border-[1px]
-      border-slate-800
+      border-darkgreen
       px-6 py-4 
       text-sm 
       font-medium 
-      text-slate-800
+      text-darkgreen
       shadow-sm 
       hover:bg-white/30
       focus-visible:outline focus-visible:outline-2 

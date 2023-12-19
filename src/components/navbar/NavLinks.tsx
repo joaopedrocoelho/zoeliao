@@ -8,7 +8,7 @@ const NavLinks = () => {
     ${raleway.className}
     text-3xl
     font-thin
-    bg-slate-50
+    
     flex 
     flex-col 
     justify-center 

@@ -32,7 +32,7 @@ const HeroBanner = () => {
         >
           <H1>Data to enrich your online business</H1>
           <p
-            className={`${raleway.className} font-normal mt-6 text-lg leading-8 text-gray-600`}
+            className={`${raleway.className} font-normal mt-6 text-lg leading-8 `}
           >
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
@@ -42,7 +42,7 @@ const HeroBanner = () => {
             className={` ${raleway.className} mt-10 flex items-center justify-center gap-x-6`}
           >
             <ButtonLink>Get started</ButtonLink>
-            <a href="#" className="text-sm font-medium leading-6 text-gray-900">
+            <a href="#" className="text-sm font-medium leading-6 ">
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
